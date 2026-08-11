@@ -1,0 +1,1574 @@
+{
+  "info": {
+    "_postman_id": "4c3c8772-7693-4523-b644-fb7ad039aa9e",
+    "name": "CRM.API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "42149464"
+  },
+  "item": [
+    {
+      "name": "Opportunity",
+      "item": [
+        {
+          "name": "GetOpportunity",
+          "item": [
+            {
+              "name": "/Opportunity/GetOpportunity",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/Opportunity/GetOpportunity?opportunityId=string",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "Opportunity",
+                    "GetOpportunity"
+                  ],
+                  "query": [
+                    {
+                      "key": "opportunityId",
+                      "value": "string"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/GetOpportunity?opportunityId=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "GetOpportunity"
+                      ],
+                      "query": [
+                        {
+                          "key": "opportunityId",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "No Content",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/GetOpportunity?opportunityId=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "GetOpportunity"
+                      ],
+                      "query": [
+                        {
+                          "key": "opportunityId",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "Bad Request",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/GetOpportunity?opportunityId=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "GetOpportunity"
+                      ],
+                      "query": [
+                        {
+                          "key": "opportunityId",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"type\": \"string\",\n  \"title\": \"string\",\n  \"status\": 8067,\n  \"detail\": \"string\",\n  \"instance\": \"string\"\n}"
+                },
+                {
+                  "name": "Internal Server Error",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/GetOpportunity?opportunityId=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "GetOpportunity"
+                      ],
+                      "query": [
+                        {
+                          "key": "opportunityId",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AddOpportunityProduct",
+          "item": [
+            {
+              "name": "/Opportunity/AddOpportunityProduct",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"opportunitId\": \"5173f838-73d7-798e-f8ea-9ac59120f80e\",\n  \"productId\": \"string\",\n  \"session\": 6569,\n  \"hours\": 5688.653625527682,\n  \"utilization\": 9163.905863666268,\n  \"rate\": 9032.2359864229,\n  \"pricingStrucutre\": \"string\",\n  \"quoteId\": \"string\",\n  \"currencyId\": \"string\",\n  \"seatCount\": 1009,\n  \"populations\": [\n    {\n      \"id\": \"2dac075b-4f15-56ae-b26b-b354061b8914\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 5022\n    },\n    {\n      \"id\": \"cd0b809e-d3ee-89de-8b78-4d49587ee93e\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 7840\n    }\n  ],\n  \"componentList\": [\n    {\n      \"name\": \"string\",\n      \"componentId\": \"string\"\n    },\n    {\n      \"name\": \"string\",\n      \"componentId\": \"string\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/Opportunity/AddOpportunityProduct",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "Opportunity",
+                    "AddOpportunityProduct"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"opportunitId\": \"5173f838-73d7-798e-f8ea-9ac59120f80e\",\n  \"productId\": \"string\",\n  \"session\": 6569,\n  \"hours\": 5688.653625527682,\n  \"utilization\": 9163.905863666268,\n  \"rate\": 9032.2359864229,\n  \"pricingStrucutre\": \"string\",\n  \"quoteId\": \"string\",\n  \"currencyId\": \"string\",\n  \"seatCount\": 1009,\n  \"populations\": [\n    {\n      \"id\": \"2dac075b-4f15-56ae-b26b-b354061b8914\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 5022\n    },\n    {\n      \"id\": \"cd0b809e-d3ee-89de-8b78-4d49587ee93e\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 7840\n    }\n  ],\n  \"componentList\": [\n    {\n      \"name\": \"string\",\n      \"componentId\": \"string\"\n    },\n    {\n      \"name\": \"string\",\n      \"componentId\": \"string\"\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/AddOpportunityProduct",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "AddOpportunityProduct"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "No Content",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"opportunitId\": \"5173f838-73d7-798e-f8ea-9ac59120f80e\",\n  \"productId\": \"string\",\n  \"session\": 6569,\n  \"hours\": 5688.653625527682,\n  \"utilization\": 9163.905863666268,\n  \"rate\": 9032.2359864229,\n  \"pricingStrucutre\": \"string\",\n  \"quoteId\": \"string\",\n  \"currencyId\": \"string\",\n  \"seatCount\": 1009,\n  \"populations\": [\n    {\n      \"id\": \"2dac075b-4f15-56ae-b26b-b354061b8914\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 5022\n    },\n    {\n      \"id\": \"cd0b809e-d3ee-89de-8b78-4d49587ee93e\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 7840\n    }\n  ],\n  \"componentList\": [\n    {\n      \"name\": \"string\",\n      \"componentId\": \"string\"\n    },\n    {\n      \"name\": \"string\",\n      \"componentId\": \"string\"\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/AddOpportunityProduct",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "AddOpportunityProduct"
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "Bad Request",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"opportunitId\": \"5173f838-73d7-798e-f8ea-9ac59120f80e\",\n  \"productId\": \"string\",\n  \"session\": 6569,\n  \"hours\": 5688.653625527682,\n  \"utilization\": 9163.905863666268,\n  \"rate\": 9032.2359864229,\n  \"pricingStrucutre\": \"string\",\n  \"quoteId\": \"string\",\n  \"currencyId\": \"string\",\n  \"seatCount\": 1009,\n  \"populations\": [\n    {\n      \"id\": \"2dac075b-4f15-56ae-b26b-b354061b8914\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 5022\n    },\n    {\n      \"id\": \"cd0b809e-d3ee-89de-8b78-4d49587ee93e\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 7840\n    }\n  ],\n  \"componentList\": [\n    {\n      \"name\": \"string\",\n      \"componentId\": \"string\"\n    },\n    {\n      \"name\": \"string\",\n      \"componentId\": \"string\"\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/AddOpportunityProduct",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "AddOpportunityProduct"
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"type\": \"string\",\n  \"title\": \"string\",\n  \"status\": 8067,\n  \"detail\": \"string\",\n  \"instance\": \"string\"\n}"
+                },
+                {
+                  "name": "Internal Server Error",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"opportunitId\": \"5173f838-73d7-798e-f8ea-9ac59120f80e\",\n  \"productId\": \"string\",\n  \"session\": 6569,\n  \"hours\": 5688.653625527682,\n  \"utilization\": 9163.905863666268,\n  \"rate\": 9032.2359864229,\n  \"pricingStrucutre\": \"string\",\n  \"quoteId\": \"string\",\n  \"currencyId\": \"string\",\n  \"seatCount\": 1009,\n  \"populations\": [\n    {\n      \"id\": \"2dac075b-4f15-56ae-b26b-b354061b8914\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 5022\n    },\n    {\n      \"id\": \"cd0b809e-d3ee-89de-8b78-4d49587ee93e\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 7840\n    }\n  ],\n  \"componentList\": [\n    {\n      \"name\": \"string\",\n      \"componentId\": \"string\"\n    },\n    {\n      \"name\": \"string\",\n      \"componentId\": \"string\"\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/AddOpportunityProduct",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "AddOpportunityProduct"
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "UpdateQuoteRate",
+          "item": [
+            {
+              "name": "{quoteId}",
+              "item": [
+                {
+                  "name": "{rate}",
+                  "item": [
+                    {
+                      "name": "/Opportunity/UpdateQuoteRate/:quoteId/:rate",
+                      "request": {
+                        "method": "PUT",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "text/plain"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/Opportunity/UpdateQuoteRate/:quoteId/:rate",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "Opportunity",
+                            "UpdateQuoteRate",
+                            ":quoteId",
+                            ":rate"
+                          ],
+                          "variable": [
+                            {
+                              "key": "quoteId",
+                              "value": "string"
+                            },
+                            {
+                              "key": "rate",
+                              "value": "352.8582435587557"
+                            }
+                          ]
+                        }
+                      },
+                      "response": [
+                        {
+                          "name": "OK",
+                          "originalRequest": {
+                            "method": "PUT",
+                            "header": [
+                              {
+                                "description": "Added as a part of security scheme: bearer",
+                                "key": "Authorization",
+                                "value": "Bearer <token>"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/Opportunity/UpdateQuoteRate/:quoteId/:rate",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "Opportunity",
+                                "UpdateQuoteRate",
+                                ":quoteId",
+                                ":rate"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "quoteId",
+                                  "value": "string"
+                                },
+                                {
+                                  "key": "rate",
+                                  "value": "352.8582435587557"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "_postman_previewlanguage": "text",
+                          "header": [],
+                          "cookie": [],
+                          "body": ""
+                        },
+                        {
+                          "name": "No Content",
+                          "originalRequest": {
+                            "method": "PUT",
+                            "header": [
+                              {
+                                "description": "Added as a part of security scheme: bearer",
+                                "key": "Authorization",
+                                "value": "Bearer <token>"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/Opportunity/UpdateQuoteRate/:quoteId/:rate",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "Opportunity",
+                                "UpdateQuoteRate",
+                                ":quoteId",
+                                ":rate"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "quoteId",
+                                  "value": "string"
+                                },
+                                {
+                                  "key": "rate",
+                                  "value": "352.8582435587557"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "No Content",
+                          "code": 204,
+                          "_postman_previewlanguage": "text",
+                          "header": [],
+                          "cookie": [],
+                          "body": ""
+                        },
+                        {
+                          "name": "Bad Request",
+                          "originalRequest": {
+                            "method": "PUT",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "text/plain"
+                              },
+                              {
+                                "description": "Added as a part of security scheme: bearer",
+                                "key": "Authorization",
+                                "value": "Bearer <token>"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/Opportunity/UpdateQuoteRate/:quoteId/:rate",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "Opportunity",
+                                "UpdateQuoteRate",
+                                ":quoteId",
+                                ":rate"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "quoteId",
+                                  "value": "string"
+                                },
+                                {
+                                  "key": "rate",
+                                  "value": "352.8582435587557"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "Bad Request",
+                          "code": 400,
+                          "_postman_previewlanguage": "json",
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "body": "{\n  \"type\": \"string\",\n  \"title\": \"string\",\n  \"status\": 8067,\n  \"detail\": \"string\",\n  \"instance\": \"string\"\n}"
+                        },
+                        {
+                          "name": "Internal Server Error",
+                          "originalRequest": {
+                            "method": "PUT",
+                            "header": [
+                              {
+                                "description": "Added as a part of security scheme: bearer",
+                                "key": "Authorization",
+                                "value": "Bearer <token>"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/Opportunity/UpdateQuoteRate/:quoteId/:rate",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "Opportunity",
+                                "UpdateQuoteRate",
+                                ":quoteId",
+                                ":rate"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "quoteId",
+                                  "value": "string"
+                                },
+                                {
+                                  "key": "rate",
+                                  "value": "352.8582435587557"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "Internal Server Error",
+                          "code": 500,
+                          "_postman_previewlanguage": "text",
+                          "header": [],
+                          "cookie": [],
+                          "body": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SyncEntityDetails",
+          "item": [
+            {
+              "name": "/Opportunity/SyncEntityDetails",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/Opportunity/SyncEntityDetails",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "Opportunity",
+                    "SyncEntityDetails"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/SyncEntityDetails",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "SyncEntityDetails"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "No Content",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/SyncEntityDetails",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "SyncEntityDetails"
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "Bad Request",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/SyncEntityDetails",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "SyncEntityDetails"
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"type\": \"string\",\n  \"title\": \"string\",\n  \"status\": 8067,\n  \"detail\": \"string\",\n  \"instance\": \"string\"\n}"
+                },
+                {
+                  "name": "Internal Server Error",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/SyncEntityDetails",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "SyncEntityDetails"
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "QuoteDetails",
+          "item": [
+            {
+              "name": "/Opportunity/QuoteDetails",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/Opportunity/QuoteDetails?opportunityId=string",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "Opportunity",
+                    "QuoteDetails"
+                  ],
+                  "query": [
+                    {
+                      "key": "opportunityId",
+                      "value": "string"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/QuoteDetails?opportunityId=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "QuoteDetails"
+                      ],
+                      "query": [
+                        {
+                          "key": "opportunityId",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "No Content",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/QuoteDetails?opportunityId=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "QuoteDetails"
+                      ],
+                      "query": [
+                        {
+                          "key": "opportunityId",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "Bad Request",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/QuoteDetails?opportunityId=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "QuoteDetails"
+                      ],
+                      "query": [
+                        {
+                          "key": "opportunityId",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"type\": \"string\",\n  \"title\": \"string\",\n  \"status\": 8067,\n  \"detail\": \"string\",\n  \"instance\": \"string\"\n}"
+                },
+                {
+                  "name": "Internal Server Error",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/QuoteDetails?opportunityId=string",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "QuoteDetails"
+                      ],
+                      "query": [
+                        {
+                          "key": "opportunityId",
+                          "value": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AddCountryHeadcount",
+          "item": [
+            {
+              "name": "/Opportunity/AddCountryHeadcount",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"opportunitId\": \"96ce0eee-71d8-20b4-ad5f-b1112b14669c\",\n  \"populations\": [\n    {\n      \"id\": \"833c77d2-d9fd-221e-bf5c-fd9f4b7fad1b\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 1044\n    },\n    {\n      \"id\": \"9e04852e-3a9c-f841-00ba-20db22ab459a\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 9395\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/Opportunity/AddCountryHeadcount",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "Opportunity",
+                    "AddCountryHeadcount"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"opportunitId\": \"96ce0eee-71d8-20b4-ad5f-b1112b14669c\",\n  \"populations\": [\n    {\n      \"id\": \"833c77d2-d9fd-221e-bf5c-fd9f4b7fad1b\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 1044\n    },\n    {\n      \"id\": \"9e04852e-3a9c-f841-00ba-20db22ab459a\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 9395\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/AddCountryHeadcount",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "AddCountryHeadcount"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "No Content",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"opportunitId\": \"96ce0eee-71d8-20b4-ad5f-b1112b14669c\",\n  \"populations\": [\n    {\n      \"id\": \"833c77d2-d9fd-221e-bf5c-fd9f4b7fad1b\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 1044\n    },\n    {\n      \"id\": \"9e04852e-3a9c-f841-00ba-20db22ab459a\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 9395\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/AddCountryHeadcount",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "AddCountryHeadcount"
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "Bad Request",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"opportunitId\": \"96ce0eee-71d8-20b4-ad5f-b1112b14669c\",\n  \"populations\": [\n    {\n      \"id\": \"833c77d2-d9fd-221e-bf5c-fd9f4b7fad1b\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 1044\n    },\n    {\n      \"id\": \"9e04852e-3a9c-f841-00ba-20db22ab459a\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 9395\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/AddCountryHeadcount",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "AddCountryHeadcount"
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"type\": \"string\",\n  \"title\": \"string\",\n  \"status\": 8067,\n  \"detail\": \"string\",\n  \"instance\": \"string\"\n}"
+                },
+                {
+                  "name": "Internal Server Error",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"opportunitId\": \"96ce0eee-71d8-20b4-ad5f-b1112b14669c\",\n  \"populations\": [\n    {\n      \"id\": \"833c77d2-d9fd-221e-bf5c-fd9f4b7fad1b\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 1044\n    },\n    {\n      \"id\": \"9e04852e-3a9c-f841-00ba-20db22ab459a\",\n      \"countryId\": \"string\",\n      \"country\": \"string\",\n      \"headCount\": 9395\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/AddCountryHeadcount",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "AddCountryHeadcount"
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AddBundleOpportunityProducts",
+          "item": [
+            {
+              "name": "/Opportunity/AddBundleOpportunityProducts",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"opportunitId\": \"7931d0d8-91c4-db6b-a8b6-37fff2819b3c\",\n  \"cpQbundleId\": \"string\",\n  \"rate\": 2604.623808286497,\n  \"productId\": \"string\",\n  \"currencyId\": \"string\",\n  \"pricingStrucutre\": \"string\",\n  \"bundleQuotes\": [\n    {\n      \"opportunitId\": \"0eb3029d-dd90-ad1b-ebea-9b5274fedf33\",\n      \"productId\": \"string\",\n      \"session\": 890,\n      \"hours\": 6176.91529518277,\n      \"utilization\": 8315.295474660817,\n      \"rate\": 9176.921761502475,\n      \"pricingStrucutre\": \"string\",\n      \"quoteId\": \"string\",\n      \"currencyId\": \"string\",\n      \"seatCount\": 5321,\n      \"populations\": [\n        {\n          \"id\": \"dd9433a8-adfa-8919-5e0a-55fc777d54b6\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 9455\n        },\n        {\n          \"id\": \"c7629774-ea30-d4dc-88dd-63974a73d69b\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 9136\n        }\n      ],\n      \"componentList\": [\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        },\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        }\n      ]\n    },\n    {\n      \"opportunitId\": \"b5f2b171-eb01-8adc-11ee-e1327d6725e0\",\n      \"productId\": \"string\",\n      \"session\": 7507,\n      \"hours\": 3529.2957651740167,\n      \"utilization\": 922.5793343430632,\n      \"rate\": 841.4617754655951,\n      \"pricingStrucutre\": \"string\",\n      \"quoteId\": \"string\",\n      \"currencyId\": \"string\",\n      \"seatCount\": 9017,\n      \"populations\": [\n        {\n          \"id\": \"ffcb372e-3a3a-8ec9-6e0b-0830721178ad\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 655\n        },\n        {\n          \"id\": \"a10cb91f-ea38-012c-6cd7-82b0d9f3a9c1\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 8695\n        }\n      ],\n      \"componentList\": [\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        },\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/Opportunity/AddBundleOpportunityProducts",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "Opportunity",
+                    "AddBundleOpportunityProducts"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"opportunitId\": \"7931d0d8-91c4-db6b-a8b6-37fff2819b3c\",\n  \"cpQbundleId\": \"string\",\n  \"rate\": 2604.623808286497,\n  \"productId\": \"string\",\n  \"currencyId\": \"string\",\n  \"pricingStrucutre\": \"string\",\n  \"bundleQuotes\": [\n    {\n      \"opportunitId\": \"0eb3029d-dd90-ad1b-ebea-9b5274fedf33\",\n      \"productId\": \"string\",\n      \"session\": 890,\n      \"hours\": 6176.91529518277,\n      \"utilization\": 8315.295474660817,\n      \"rate\": 9176.921761502475,\n      \"pricingStrucutre\": \"string\",\n      \"quoteId\": \"string\",\n      \"currencyId\": \"string\",\n      \"seatCount\": 5321,\n      \"populations\": [\n        {\n          \"id\": \"dd9433a8-adfa-8919-5e0a-55fc777d54b6\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 9455\n        },\n        {\n          \"id\": \"c7629774-ea30-d4dc-88dd-63974a73d69b\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 9136\n        }\n      ],\n      \"componentList\": [\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        },\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        }\n      ]\n    },\n    {\n      \"opportunitId\": \"b5f2b171-eb01-8adc-11ee-e1327d6725e0\",\n      \"productId\": \"string\",\n      \"session\": 7507,\n      \"hours\": 3529.2957651740167,\n      \"utilization\": 922.5793343430632,\n      \"rate\": 841.4617754655951,\n      \"pricingStrucutre\": \"string\",\n      \"quoteId\": \"string\",\n      \"currencyId\": \"string\",\n      \"seatCount\": 9017,\n      \"populations\": [\n        {\n          \"id\": \"ffcb372e-3a3a-8ec9-6e0b-0830721178ad\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 655\n        },\n        {\n          \"id\": \"a10cb91f-ea38-012c-6cd7-82b0d9f3a9c1\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 8695\n        }\n      ],\n      \"componentList\": [\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        },\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/AddBundleOpportunityProducts",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "AddBundleOpportunityProducts"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "No Content",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"opportunitId\": \"7931d0d8-91c4-db6b-a8b6-37fff2819b3c\",\n  \"cpQbundleId\": \"string\",\n  \"rate\": 2604.623808286497,\n  \"productId\": \"string\",\n  \"currencyId\": \"string\",\n  \"pricingStrucutre\": \"string\",\n  \"bundleQuotes\": [\n    {\n      \"opportunitId\": \"0eb3029d-dd90-ad1b-ebea-9b5274fedf33\",\n      \"productId\": \"string\",\n      \"session\": 890,\n      \"hours\": 6176.91529518277,\n      \"utilization\": 8315.295474660817,\n      \"rate\": 9176.921761502475,\n      \"pricingStrucutre\": \"string\",\n      \"quoteId\": \"string\",\n      \"currencyId\": \"string\",\n      \"seatCount\": 5321,\n      \"populations\": [\n        {\n          \"id\": \"dd9433a8-adfa-8919-5e0a-55fc777d54b6\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 9455\n        },\n        {\n          \"id\": \"c7629774-ea30-d4dc-88dd-63974a73d69b\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 9136\n        }\n      ],\n      \"componentList\": [\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        },\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        }\n      ]\n    },\n    {\n      \"opportunitId\": \"b5f2b171-eb01-8adc-11ee-e1327d6725e0\",\n      \"productId\": \"string\",\n      \"session\": 7507,\n      \"hours\": 3529.2957651740167,\n      \"utilization\": 922.5793343430632,\n      \"rate\": 841.4617754655951,\n      \"pricingStrucutre\": \"string\",\n      \"quoteId\": \"string\",\n      \"currencyId\": \"string\",\n      \"seatCount\": 9017,\n      \"populations\": [\n        {\n          \"id\": \"ffcb372e-3a3a-8ec9-6e0b-0830721178ad\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 655\n        },\n        {\n          \"id\": \"a10cb91f-ea38-012c-6cd7-82b0d9f3a9c1\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 8695\n        }\n      ],\n      \"componentList\": [\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        },\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/AddBundleOpportunityProducts",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "AddBundleOpportunityProducts"
+                      ]
+                    }
+                  },
+                  "status": "No Content",
+                  "code": 204,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                },
+                {
+                  "name": "Bad Request",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "text/plain"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"opportunitId\": \"7931d0d8-91c4-db6b-a8b6-37fff2819b3c\",\n  \"cpQbundleId\": \"string\",\n  \"rate\": 2604.623808286497,\n  \"productId\": \"string\",\n  \"currencyId\": \"string\",\n  \"pricingStrucutre\": \"string\",\n  \"bundleQuotes\": [\n    {\n      \"opportunitId\": \"0eb3029d-dd90-ad1b-ebea-9b5274fedf33\",\n      \"productId\": \"string\",\n      \"session\": 890,\n      \"hours\": 6176.91529518277,\n      \"utilization\": 8315.295474660817,\n      \"rate\": 9176.921761502475,\n      \"pricingStrucutre\": \"string\",\n      \"quoteId\": \"string\",\n      \"currencyId\": \"string\",\n      \"seatCount\": 5321,\n      \"populations\": [\n        {\n          \"id\": \"dd9433a8-adfa-8919-5e0a-55fc777d54b6\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 9455\n        },\n        {\n          \"id\": \"c7629774-ea30-d4dc-88dd-63974a73d69b\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 9136\n        }\n      ],\n      \"componentList\": [\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        },\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        }\n      ]\n    },\n    {\n      \"opportunitId\": \"b5f2b171-eb01-8adc-11ee-e1327d6725e0\",\n      \"productId\": \"string\",\n      \"session\": 7507,\n      \"hours\": 3529.2957651740167,\n      \"utilization\": 922.5793343430632,\n      \"rate\": 841.4617754655951,\n      \"pricingStrucutre\": \"string\",\n      \"quoteId\": \"string\",\n      \"currencyId\": \"string\",\n      \"seatCount\": 9017,\n      \"populations\": [\n        {\n          \"id\": \"ffcb372e-3a3a-8ec9-6e0b-0830721178ad\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 655\n        },\n        {\n          \"id\": \"a10cb91f-ea38-012c-6cd7-82b0d9f3a9c1\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 8695\n        }\n      ],\n      \"componentList\": [\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        },\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/AddBundleOpportunityProducts",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "AddBundleOpportunityProducts"
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"type\": \"string\",\n  \"title\": \"string\",\n  \"status\": 8067,\n  \"detail\": \"string\",\n  \"instance\": \"string\"\n}"
+                },
+                {
+                  "name": "Internal Server Error",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"opportunitId\": \"7931d0d8-91c4-db6b-a8b6-37fff2819b3c\",\n  \"cpQbundleId\": \"string\",\n  \"rate\": 2604.623808286497,\n  \"productId\": \"string\",\n  \"currencyId\": \"string\",\n  \"pricingStrucutre\": \"string\",\n  \"bundleQuotes\": [\n    {\n      \"opportunitId\": \"0eb3029d-dd90-ad1b-ebea-9b5274fedf33\",\n      \"productId\": \"string\",\n      \"session\": 890,\n      \"hours\": 6176.91529518277,\n      \"utilization\": 8315.295474660817,\n      \"rate\": 9176.921761502475,\n      \"pricingStrucutre\": \"string\",\n      \"quoteId\": \"string\",\n      \"currencyId\": \"string\",\n      \"seatCount\": 5321,\n      \"populations\": [\n        {\n          \"id\": \"dd9433a8-adfa-8919-5e0a-55fc777d54b6\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 9455\n        },\n        {\n          \"id\": \"c7629774-ea30-d4dc-88dd-63974a73d69b\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 9136\n        }\n      ],\n      \"componentList\": [\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        },\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        }\n      ]\n    },\n    {\n      \"opportunitId\": \"b5f2b171-eb01-8adc-11ee-e1327d6725e0\",\n      \"productId\": \"string\",\n      \"session\": 7507,\n      \"hours\": 3529.2957651740167,\n      \"utilization\": 922.5793343430632,\n      \"rate\": 841.4617754655951,\n      \"pricingStrucutre\": \"string\",\n      \"quoteId\": \"string\",\n      \"currencyId\": \"string\",\n      \"seatCount\": 9017,\n      \"populations\": [\n        {\n          \"id\": \"ffcb372e-3a3a-8ec9-6e0b-0830721178ad\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 655\n        },\n        {\n          \"id\": \"a10cb91f-ea38-012c-6cd7-82b0d9f3a9c1\",\n          \"countryId\": \"string\",\n          \"country\": \"string\",\n          \"headCount\": 8695\n        }\n      ],\n      \"componentList\": [\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        },\n        {\n          \"name\": \"string\",\n          \"componentId\": \"string\"\n        }\n      ]\n    }\n  ]\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/Opportunity/AddBundleOpportunityProducts",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "Opportunity",
+                        "AddBundleOpportunityProducts"
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "GenerateToken",
+          "item": [
+            {
+              "name": "/User/GenerateToken",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "const response = pm.response.json();\r",
+                      "pm.environment.set(\"cpq_bearerToken\", response.token);"
+                    ],
+                    "type": "text/javascript",
+                    "packages": {},
+                    "requests": {}
+                  }
+                }
+              ],
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"clientName\": \"CPQ\",\n  \"password\": \"C0570m36#u693n5@5\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/User/GenerateToken",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "User",
+                    "GenerateToken"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "OK",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: bearer",
+                        "key": "Authorization",
+                        "value": "Bearer <token>"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"clientName\": \"string\",\n  \"password\": \"string\"\n}",
+                      "options": {
+                        "raw": {
+                          "headerFamily": "json",
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/User/GenerateToken",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "User",
+                        "GenerateToken"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [],
+                  "cookie": [],
+                  "body": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{cpq_bearerToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": ""
+    }
+  ]
+}

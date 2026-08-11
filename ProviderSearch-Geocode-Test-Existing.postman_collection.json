@@ -1,0 +1,54 @@
+{
+  "info": {
+    "_postman_id": "4ea299db-24d4-4bd2-9939-b71e64373971",
+    "name": "ProviderSearch-Geocode-Test-Existing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "42149464"
+  },
+  "item": [
+    {
+      "name": "Geocode-PostCode-And-Country-Passed-With-Text",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.geoapify.com/v1/geocode/search?text=%2242450%2CKorea%22&lang=en&limit=1&format=json&apiKey=497acc13ae36439198b34255a5a4ab39",
+          "protocol": "https",
+          "host": [
+            "api",
+            "geoapify",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "geocode",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "text",
+              "value": "%2242450%2CKorea%22"
+            },
+            {
+              "key": "lang",
+              "value": "en"
+            },
+            {
+              "key": "limit",
+              "value": "1"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "apiKey",
+              "value": "497acc13ae36439198b34255a5a4ab39"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

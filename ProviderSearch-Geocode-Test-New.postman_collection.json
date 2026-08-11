@@ -1,0 +1,114 @@
+{
+  "info": {
+    "_postman_id": "ccab2971-9ce3-47d3-ac6d-08ab486d8b1c",
+    "name": "ProviderSearch-Geocode-Test-New",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "42149464"
+  },
+  "item": [
+    {
+      "name": "Geocode-Country-Passed-With-Country",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.geoapify.com/v1/geocode/search?postcode=42450&country=kr&format=json&apiKey=497acc13ae36439198b34255a5a4ab39",
+          "protocol": "https",
+          "host": [
+            "api",
+            "geoapify",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "geocode",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "postcode",
+              "value": "42450"
+            },
+            {
+              "key": "country",
+              "value": "kr"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "apiKey",
+              "value": "497acc13ae36439198b34255a5a4ab39"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Geocode-Country-Passed-With-Text",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.geoapify.com/v1/geocode/search?postcode=482003&text=India&format=json&apiKey=497acc13ae36439198b34255a5a4ab39",
+          "protocol": "https",
+          "host": [
+            "api",
+            "geoapify",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "geocode",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "postcode",
+              "value": "482003"
+            },
+            {
+              "key": "text",
+              "value": "India"
+            },
+            {
+              "key": "format",
+              "value": "json"
+            },
+            {
+              "key": "apiKey",
+              "value": "497acc13ae36439198b34255a5a4ab39"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
